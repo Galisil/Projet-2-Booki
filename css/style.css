@@ -3,6 +3,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    margin: 0px;
+}
+
+h1, p {
+    padding: 0px;
+    margin: 0px;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -11,25 +20,128 @@ header {
 }
 
 header img {
-    width: 90px;
-    height: 30px;
-    padding-top: 20px;
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px 30px 50px;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 150px;
+    gap: 5em;
 }
  
 nav div {
     padding-top: 10px;
+    border-top: solid transparent;
 }
 
 nav div:hover {
     color: #0065FC;
     border-top: solid #0065FC;
+}
+
+.titre-recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.recherche {
+    display: flex;
+    flex-direction: row;
+}
+
+.recherche label, .recherche button, .recherche input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.recherche label {
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    width: 50px;
+    height: 49px;
+}
+
+.recherche input {
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    width: 205px;
+    height: 49px;
+}
+
+.recherche input:focus {
+    border: 1px solid #F2F2F2;
+}
+
+.recherche button {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    width: 132px;
+    height: 49px;
+}
+
+.filtres {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.filtres-recherche {
+    font-size: 18px;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;    
+    background-color: white;
+    border-radius: 25px;
+    border: solid #F2F2F2;
+    gap: 10px;
+}
+
+.filtres-recherche:hover {
+    background-color: #DEEBFF;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.icone-info {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
