@@ -196,6 +196,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -343,6 +344,40 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/********Activités******/
+
+.activites {
+    display: flex;
+    flex-direction: column;
+    width: 1340px;
+    height: 559.02px;
+    padding: 30px;
+    gap: 30px;
+}
+
+.activites-cards .card {
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.activites-cards img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.activites-cards h3 {
+    display: block;
+    padding: 20px 19px;
+}
+
+
 
 
 
