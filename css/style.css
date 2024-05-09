@@ -389,8 +389,7 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   align-items: space-around;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .colonne-footer {
@@ -421,9 +420,14 @@ footer ul {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1023.9px) and (min-width: 768px) {
+  body {
+    margin: 0px;
+  }
+
   .main-container {
     max-width: 1023.9px;
     min-width: 768px;
+    padding: 0px 30px;
   }
 
   .hebergements-and-populaires {
@@ -444,8 +448,8 @@ footer ul {
   }
 
   .hebergements-cards .card {
-    width: 210px;
-    height: 167px;
+    width: 268px;
+    height: 207px;
   }
 
   .hebergements-cards .card-title {
@@ -472,7 +476,12 @@ footer ul {
   .populaires-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .populaires-cards .card {
+    width: 264px;
   }
 
   .populaires-cards a {
