@@ -246,7 +246,7 @@ form {
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
+  /*background-color: var(--main-bg-color);*/
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -254,12 +254,13 @@ form {
 
 /****** Hebergements ***********/
 .hebergements {
+  background-color: var(--main-bg-color);
   width: 65%;
 }
 
 .hebergements-cards .card {
-  width: 235px;
-  height: 207px;
+  width: 250.33px;
+  height: 207.25px;
 }
 
 .hebergements-cards img {
@@ -303,6 +304,7 @@ form {
 
 /****** Populaires ***********/
 .populaires {
+  background-color: var(--main-bg-color);
   width: 32%;
 }
 
@@ -520,6 +522,10 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) and (min-width: 320px) {
+  :root {
+    --main-bg-color: #f2f2f2;
+  }
+
   body {
     margin: auto;
   }
@@ -584,18 +590,19 @@ footer ul {
   }
 
   .recherche input {
-    width: 235px;
+    width: 251px; /* width totale figma 335px -49px -50px + 15px compensant position relative */
+    /*justify-content: center;*/
   }
 
   .recherche input:focus {
-    width: 234.5px; /*pour que le bouton loupe ne se décale pas quand input actif*/
+    width: 250.5px; /*pour que le bouton loupe ne se décale pas quand input actif*/
   }
 
   .recherche button {
     position: relative;
-    right: 15px; /*pour que les lignes haut et bas de l'input ne s'arrêtent pas avant le bouton loupe*/
+    right: 15px; /*pour que les lignes haut et bas de l'input ne s'arrêtent pas avant le bouton loupe */
     border-radius: 15px;
-    max-width: 50px;
+    padding: 0px 16px;
     filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.3));
   }
 
@@ -623,9 +630,10 @@ footer ul {
   .filtres-recherche {
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 10px;
-    width: 160px;
-    font-size: 16px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 162.5px;
+    font-size: 14px;
   }
 
   .info {
@@ -656,6 +664,14 @@ footer ul {
     align-content: center;
   }
 
+  .card {
+    max-width: 335px;
+  }
+
+  /*.fa-xs fa-solid fa-star neutral-star {
+    --filter-bg-color: #deebff;
+  } */
+
   .populaires {
     width: 100%;
     display: flex;
@@ -664,40 +680,39 @@ footer ul {
   }
 
   .populaires-title {
-    gap: 100px;
-  }
-
-  .populaires section {
-    background-color: #f2f2f2;
+    gap: 100px; /*pour séparer titre de l'icône statistiques*/
   }
 
   .populaires-cards {
-    max-width: 100%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0px;
     justify-content: center;
   }
 
-  .populaires-cards .card {
-    max-width: 325px;
-  }
-
   section .hebergements {
+    background-color: white;
     border-radius: 0px;
     width: 100%;
   }
 
   .hebergements {
-    width: 100%;
     background-color: white;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
+  }
+
+  .hebergements h2 {
+    margin-bottom: 0px;
   }
 
   .hebergements-cards {
     flex-direction: column;
-    max-width: 100%;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: space-between;
+    margin: 15px 0px;
   }
 
   .hebergements-cards .card {
