@@ -398,7 +398,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: space-around;
   padding: 20px;
 }
 
@@ -665,12 +664,8 @@ footer ul {
   }
 
   .card {
-    max-width: 335px;
+    max-width: 325px;
   }
-
-  /*.fa-xs fa-solid fa-star neutral-star {
-    --filter-bg-color: #deebff;
-  } */
 
   .populaires {
     width: 100%;
@@ -710,13 +705,12 @@ footer ul {
 
   .hebergements-cards {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-between;
+    width: 100%;
     margin: 15px 0px;
   }
 
   .hebergements-cards .card {
-    width: 325px;
+    width: 100%;
   }
 
   .activites {
