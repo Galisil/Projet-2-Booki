@@ -565,7 +565,7 @@ footer ul {
   header nav {
     gap: 0px;
     width: 100%;
-    max-width: 315px; /*test*/
+    /*max-width: 315px; /*test*/
   }
 
   header nav div {
@@ -626,7 +626,9 @@ footer ul {
     flex-wrap: wrap;
     gap: 10px;
     row-gap: 20px;
-    max-width: 315px; /*test*/
+    /*max-width: 315px; /*test*/
+    margin: 0px;
+    padding: 0px;
   }
 
   .filtres-recherche {
@@ -709,7 +711,7 @@ footer ul {
     flex-direction: column;
     width: 100%;
     margin: 15px 0px;
-    max-width: 315px; /*test*/
+    max-width: 325px; /*test*/
     /*padding-right: 20px;*/
   }
 

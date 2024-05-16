@@ -39,7 +39,8 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
-          <form action="" method="get">
+          <!--enlevé action = "" après form dans ligne en dessous-->
+          <form method="get">
             <div class="recherche">
               <label for="recherche-lieu"
                 ><img
@@ -53,17 +54,17 @@
                 placeholder="Ex: Marseille"
               />
               <button>
-                <div class="texte">Rechercher</div>
-                <div class="image-loupe">
+                <span class="texte">Rechercher</span>
+                <span class="image-loupe">
                   <img
                     src="./images/ajout-images/icone-loupe.png"
                     alt="icône loupe"
                   />
-                </div>
+                </span>
               </button>
             </div>
             <div class="filtres">
-              <label for="filtres-recherche"><strong>Filtres</strong></label>
+              <h2>Filtres</h2>
               <div class="boutons-filtres">
                 <button
                   type="button"
