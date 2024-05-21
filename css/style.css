@@ -23,8 +23,7 @@ body {
 .main-container {
   width: 100%;
   margin: auto;
-  padding: 0 50px
-    /*50px par défaut, remplacer par 30 pour que mon écran=maquette*/;
+  padding: 0 50px;
   max-width: 1440px;
   min-width: 1025px;
 }
@@ -36,7 +35,7 @@ a {
 
 .section-title {
   margin: 0;
-  font-size: 22px;
+  font-size: 22px; /*valeur en pixels pour être le + fidèle possible à maquettes*/
 }
 
 .card {
@@ -71,7 +70,7 @@ header {
 }
 
 header img {
-  width: 61.09px;
+  width: 61px;
   height: 19px;
   padding-top: 30px;
   margin-bottom: 30px;
@@ -171,7 +170,6 @@ form {
   font-size: 18px;
   display: flex;
   flex-direction: row;
-  /*justify-content: flex-start;*/
   align-items: center;
   gap: 15px;
   margin-bottom: 35px;
@@ -251,7 +249,6 @@ form {
 }
 
 .hebergements-and-populaires section {
-  /*background-color: var(--main-bg-color);*/
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -261,7 +258,7 @@ form {
 
 .hebergements {
   background-color: var(--main-bg-color);
-  width: /*65%*/ 68%;
+  width: /*65% valeur de base dans le code*/ 68%;
   margin: 0px;
   padding: 20px 0px;
 }
@@ -274,18 +271,12 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /*padding-right: 0px;*/
-  /*margin: 30px 0px;*/
-  /*max-width: 811px;*/
-  /*width: 100%;*/
   gap: 30px;
-  /*max-height: 445px;*/
-  /*flex: 1;*/
 }
 
 .hebergements-cards .card,
 .hebergements-cards a {
-  width: /*250.33px*/ 100%;
+  width: 100%;
   max-width: 250.33px;
   height: 207.25px;
   box-sizing: border-box;
@@ -384,6 +375,8 @@ form {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
   padding-bottom: 30px;
 }
 
@@ -438,18 +431,10 @@ footer ul {
   gap: 15px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 
-/*Large devices (pc, less-equal than 1440px) */
-
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-  /* body {
-    margin: 0px;
-  } */
-
+@media screen and (max-width: 1024px) and (min-width: 768px) {
   .main-container {
     max-width: 1024px;
     min-width: 768px;
@@ -487,12 +472,6 @@ footer ul {
     font-size: 13px;
     margin-bottom: 4px;
   }
-
-  /*.hebergements-cards {
-    margin: 0px;
-    gap: 0px;
-    justify-content: space-between;
-  } */
 
   .populaires {
     width: 100%;
@@ -538,7 +517,7 @@ footer ul {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.99px) and (min-width: 320px) {
+@media screen and (max-width: 767.99px) and (min-width: 320px) {
   :root {
     --main-bg-color: #f2f2f2;
   }
@@ -582,7 +561,6 @@ footer ul {
   header nav {
     gap: 0px;
     width: 100%;
-    /*max-width: 315px; /*test*/
   }
 
   header nav div {
@@ -648,7 +626,6 @@ footer ul {
     flex-wrap: wrap;
     gap: 10px;
     row-gap: 20px;
-    /*max-width: 315px; /*test*/
     margin: 0px;
     padding: 0px;
   }
